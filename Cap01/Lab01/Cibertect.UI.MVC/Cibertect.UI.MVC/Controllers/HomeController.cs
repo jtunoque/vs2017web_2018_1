@@ -26,5 +26,11 @@ namespace Cibertect.UI.MVC.Controllers
 
             return View();
         }
+
+        public ActionResult Productos()
+        {
+
+            return View();
+        }
     }
 }
