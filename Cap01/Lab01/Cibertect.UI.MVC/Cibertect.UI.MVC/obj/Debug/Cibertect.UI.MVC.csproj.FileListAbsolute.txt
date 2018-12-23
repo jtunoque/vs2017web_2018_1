@@ -98,3 +98,5 @@ C:\Web2017\Labs\vs2017web_2018_1\Cap01\Lab01\Cibertect.UI.MVC\Cibertect.UI.MVC\o
 C:\Web2017\Labs\vs2017web_2018_1\Cap01\Lab01\Cibertect.UI.MVC\Cibertect.UI.MVC\obj\Debug\Cibertect.UI.MVC.csproj.CopyComplete
 C:\Web2017\Labs\vs2017web_2018_1\Cap01\Lab01\Cibertect.UI.MVC\Cibertect.UI.MVC\obj\Debug\Cibertect.UI.MVC.dll
 C:\Web2017\Labs\vs2017web_2018_1\Cap01\Lab01\Cibertect.UI.MVC\Cibertect.UI.MVC\obj\Debug\Cibertect.UI.MVC.pdb
+C:\Web2017\Labs\vs2017web_2018_1\Cap01\Lab01\Cibertect.UI.MVC\Cibertect.UI.MVC\bin\log4net.dll
+C:\Web2017\Labs\vs2017web_2018_1\Cap01\Lab01\Cibertect.UI.MVC\Cibertect.UI.MVC\bin\log4net.xml
