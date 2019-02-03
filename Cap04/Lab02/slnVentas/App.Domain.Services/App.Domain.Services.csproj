@@ -40,8 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MarcaService.cs" />
+    <Compile Include="ProductoService.cs" />
     <Compile Include="CategoriaService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnidadMedidaService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\App.Data.Repository.Interfaces\App.Data.Repository.Interfaces.csproj">

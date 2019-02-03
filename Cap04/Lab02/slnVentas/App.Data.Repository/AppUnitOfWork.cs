@@ -28,10 +28,17 @@ namespace App.Data.Repository
 
         private void CreateRepositories()
         {
-             this.CategoriaRepository = new CategoriaRepository(_context);
+            this.CategoriaRepository = new CategoriaRepository(_context);
+            this.MarcaRepository = new MarcaRepository(_context);
+            this.UnidadMedidaRepository = new UnidadMedidaRepository(_context);
+            this.ProductoRepository = new ProductoRepository(_context);
         }
 
         public ICategoriaRepository CategoriaRepository { get; set; }
+        public IProductoRepository ProductoRepository { get; set; }
+        public IMarcaRepository MarcaRepository { get; set; }
+        public IUnidadMedidaRepository UnidadMedidaRepository { get; set; }
+
 
         public int Complete()
         {

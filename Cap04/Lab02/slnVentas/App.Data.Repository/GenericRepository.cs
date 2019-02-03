@@ -30,22 +30,39 @@ namespace App.Data.Repository
             return this.context.Set<TEntity>().Count();
         }
 
+        /// <summary>
+        /// Metodo para obtener una lista de datos por filtros
+        /// </summary>
+        /// <param name="predicate"></param>
+        /// <param name="includes">
+        /// El include, incluye las tablas que estan relacionada a 
+        /// la tabla principal, ejemplo "Marca,Categoria,UnidadMedida"
+        /// </param>
+        /// <returns></returns>
         public IEnumerable<TEntity> GetAll(
-            Expression<Func<TEntity, bool>> predicate = null
+            Expression<Func<TEntity, bool>> predicate = null,
+            string includes = null
             )
         {
             var result = new List<TEntity>();
-            if(predicate !=null)
+            IQueryable<TEntity> query = this.context.Set<TEntity>();
+
+            //Inludes
+            if(includes!=null)
             {
-                result = this.context.Set<TEntity>()
-                    .Where(predicate).ToList();
-            }
-            else
-            {
-                result = this.context.Set<TEntity>().ToList();
+                foreach(var tableInclude in includes.Split(','))
+                {
+                    query = query.Include(tableInclude);
+                }
             }
 
-            return result;
+            //Where
+            if(predicate !=null)
+            {
+                query = query.Where(predicate);
+            }
+
+            return query.ToList();
         }
 
         public TEntity GetById(int id)

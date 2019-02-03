@@ -41,8 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IAppUnitOfWork.cs" />
+    <Compile Include="IMarcaRepository.cs" />
+    <Compile Include="IProductoRepository.cs" />
     <Compile Include="ICategoriaRepository.cs" />
     <Compile Include="IGenericRepository.cs" />
+    <Compile Include="IUnidadMedidaRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

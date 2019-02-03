@@ -15,7 +15,8 @@ namespace App.Data.Repository.Interfaces
         void Remove(TEntity entity);
         TEntity GetById(int id);
         IEnumerable<TEntity> GetAll(
-            Expression<Func<TEntity, bool>> predicate = null
+            Expression<Func<TEntity, bool>> predicate = null,
+            string includes = null
             );
         int Count();
     }
