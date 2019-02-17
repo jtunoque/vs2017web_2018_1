@@ -16,7 +16,8 @@
     </form>*@
 
 @*Con HtmlHelpers*@
-@using (Html.BeginForm())
+@using (Ajax.BeginForm("Create","Categoria",
+    new AjaxOptions() {OnSuccess= "app.CategoriaView.RefreshLista()" }))
 {
     <div class="form-horizontal">
         @Html.HiddenFor(model => model.CategoriaID)
@@ -45,5 +46,6 @@
 
 @section scriptsAdicionales
 {
-    @Scripts.Render("~/bundles/jqueryval")    
+    @Scripts.Render("~/bundles/jqueryval")   
+    
 }

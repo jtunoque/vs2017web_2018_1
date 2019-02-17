@@ -14,21 +14,27 @@ namespace App.UI.Web.MVC.Controllers.Mantenimientos
     {
         private readonly ICategoriaService categoriaServices;
 
-        public CategoriaController()
+        public CategoriaController(ICategoriaService pCategoriaServices)
         {
-            categoriaServices = new CategoriaService();
+            categoriaServices = pCategoriaServices;
         }
 
         // GET: Categoria
         public ActionResult Index()
         {
-            var model = categoriaServices.GetAll("");
-            return View(model);
+            return View();
+        }
+
+        public ActionResult Buscar(string filtroPorNombre)
+        {
+            filtroPorNombre = filtroPorNombre != null ? filtroPorNombre : "";
+            var model = categoriaServices.GetAll(filtroPorNombre);
+            return PartialView("IndexListado",model);
         }
 
         public ActionResult Create()
         {
-            return View();
+            return PartialView();
         }
         /*
         [HttpPost]

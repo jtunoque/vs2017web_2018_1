@@ -1,4 +1,6 @@
 ﻿@model  IEnumerable<App.Entities.Base.Producto>
+@using App.UI.Web.MVC.CustomHtmlHelpers;
+
 
 @{
     ViewBag.Title = "Index";
@@ -27,6 +29,7 @@
         <td>Precio Mayor</td>
         <td>Precio Menor</td>
         <td>Stock Actual</td>
+        <td>Stock Actual</td>
     </tr>
     @foreach (var item in Model)
     {
@@ -38,6 +41,7 @@
             <td>@item.PrecioMayor</td>
             <td>@item.PrecioMenor</td>
             <td>@item.StockActual</td>
+            <td>@Html.SemaforoStock(@item.StockActual)</td>
         </tr>
     }
 </table>
