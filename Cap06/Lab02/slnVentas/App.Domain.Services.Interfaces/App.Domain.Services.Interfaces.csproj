@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IMarcaService.cs" />
+    <Compile Include="IComentarioService.cs" />
     <Compile Include="ISeguridadService.cs" />
     <Compile Include="IProductoService.cs" />
     <Compile Include="ICategoriaService.cs" />
