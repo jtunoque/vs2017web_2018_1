@@ -6,19 +6,31 @@
 
             $(".ConsultaProductosStock .Buscar").on("click", this.Buscar);
 
+            jsGrid.locale("es");
+
             $("#ListaProductos").jsGrid(
                 {
                     width: "100%",
-                    height: "600px",
+                    height: "400px",
                     paging: true,
-                    pageSize: 100,
+                    pageSize: 10,
                     pageIndex: 1,
                     autoload: true,
                     pageLoading:true,
                     fields:
                         [
-                            { name:"Nombre", type:"text", width: 150 },
-                            { name:"StockActual", type:"text", width: 150 }
+                            {
+                                itemTemplate: function (_,item) {
+                                    return $("<input>").attr("type", "radio")
+                                        .attr("name", "productos")
+                                        .on("change", function () {
+                                            app.helpers.closeModal("BusquedaProductoPopupID",item);
+                                        });
+                                }
+                            },
+                            { name: "Nombre", title:"Nombre", type: "text", width: 150 },
+                            { name: "PrecioMenor", title:"Precio", type: "text", width: 150 },
+                            { name: "StockActual", title: "Stock", type:"text", width: 150 }
                         ],
                     controller:
                         {

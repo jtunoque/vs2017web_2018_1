@@ -1,4 +1,5 @@
-﻿(function (app) {
+﻿
+(function (app) {
     app.helpers =
     {
         replaceAll : function (string, find, replace) {
@@ -33,17 +34,46 @@
             var json = localStorage.getItem(keyStorage);
             return JSON.parse(json);
         },
-        showModal: function (containerId,url) {            
+        showModal: function (containerId,url, closeFunction) {            
             //Invocando a la vista utilizando AJAX
             $.get(url,
                 function (html) {
                     $('#' + containerId + " .modal-body").html(html);
                     $("#" + containerId).modal("show");
-                }
+                    if (closeFunction !== undefined) {
+                        $("#" + containerId).on('hidden.bs.modal', closeFunction);
+                    }
+                }                
             );
         },
-        closeModal(modalId) {
+        closeModal(modalId, state) {            
+            if (state !== undefined) {
+                this.stateModal = state;
+            }
             $("#" + modalId).modal("hide");
+        },
+        stateModal: {},
+        ShowMessageSuccess: function (message) {
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": true,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": true,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            };
+
+            toastr["success"](message);
         }
+
     }
 })(window.app = window.app || {});
