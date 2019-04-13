@@ -1,0 +1,9 @@
+C:\Web2017\Labs\vs2017web_2018_1\Cap 11\App.UI.MVCCore\App.Data\bin\Debug\netstandard2.0\App.Data.deps.json
+C:\Web2017\Labs\vs2017web_2018_1\Cap 11\App.UI.MVCCore\App.Data\bin\Debug\netstandard2.0\App.Data.dll
+C:\Web2017\Labs\vs2017web_2018_1\Cap 11\App.UI.MVCCore\App.Data\obj\Debug\netstandard2.0\App.Data.csprojAssemblyReference.cache
+C:\Web2017\Labs\vs2017web_2018_1\Cap 11\App.UI.MVCCore\App.Data\obj\Debug\netstandard2.0\App.Data.csproj.CoreCompileInputs.cache
+C:\Web2017\Labs\vs2017web_2018_1\Cap 11\App.UI.MVCCore\App.Data\obj\Debug\netstandard2.0\App.Data.AssemblyInfoInputs.cache
+C:\Web2017\Labs\vs2017web_2018_1\Cap 11\App.UI.MVCCore\App.Data\obj\Debug\netstandard2.0\App.Data.AssemblyInfo.cs
+C:\Web2017\Labs\vs2017web_2018_1\Cap 11\App.UI.MVCCore\App.Data\bin\Debug\netstandard2.0\App.Data.pdb
+C:\Web2017\Labs\vs2017web_2018_1\Cap 11\App.UI.MVCCore\App.Data\obj\Debug\netstandard2.0\App.Data.dll
+C:\Web2017\Labs\vs2017web_2018_1\Cap 11\App.UI.MVCCore\App.Data\obj\Debug\netstandard2.0\App.Data.pdb

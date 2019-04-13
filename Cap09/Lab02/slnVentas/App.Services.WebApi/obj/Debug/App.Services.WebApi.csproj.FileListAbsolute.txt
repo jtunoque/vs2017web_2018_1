@@ -140,3 +140,12 @@ C:\Web2017\Labs\vs2017web_2018_1\Cap09\Lab02\slnVentas\App.Services.WebApi\bin\E
 C:\Web2017\Labs\vs2017web_2018_1\Cap09\Lab02\slnVentas\App.Services.WebApi\bin\SimpleInjector.xml
 C:\Web2017\Labs\vs2017web_2018_1\Cap09\Lab02\slnVentas\App.Services.WebApi\bin\SimpleInjector.Integration.WebApi.xml
 C:\Web2017\Labs\vs2017web_2018_1\Cap09\Lab02\slnVentas\App.Services.WebApi\bin\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Web2017\Labs\vs2017web_2018_1\Cap09\Lab02\slnVentas\App.Services.WebApi\bin\Microsoft.Owin.dll
+C:\Web2017\Labs\vs2017web_2018_1\Cap09\Lab02\slnVentas\App.Services.WebApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Web2017\Labs\vs2017web_2018_1\Cap09\Lab02\slnVentas\App.Services.WebApi\bin\Microsoft.Owin.Security.dll
+C:\Web2017\Labs\vs2017web_2018_1\Cap09\Lab02\slnVentas\App.Services.WebApi\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Web2017\Labs\vs2017web_2018_1\Cap09\Lab02\slnVentas\App.Services.WebApi\bin\Owin.dll
+C:\Web2017\Labs\vs2017web_2018_1\Cap09\Lab02\slnVentas\App.Services.WebApi\bin\Microsoft.Owin.xml
+C:\Web2017\Labs\vs2017web_2018_1\Cap09\Lab02\slnVentas\App.Services.WebApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Web2017\Labs\vs2017web_2018_1\Cap09\Lab02\slnVentas\App.Services.WebApi\bin\Microsoft.Owin.Security.xml
+C:\Web2017\Labs\vs2017web_2018_1\Cap09\Lab02\slnVentas\App.Services.WebApi\bin\Microsoft.Owin.Security.OAuth.xml

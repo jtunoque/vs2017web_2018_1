@@ -8,6 +8,7 @@ using System.Web.Http;
 
 namespace App.Services.WebApi.Controllers.Mantenimiento
 {
+    [Authorize]
     public class CategoriaController: ApiController
     {
         private readonly ICategoriaService categoriaService;

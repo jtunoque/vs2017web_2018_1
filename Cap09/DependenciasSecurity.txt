@@ -1,0 +1,6 @@
+Microsoft.Owin   1
+Microsoft.Owin.Host.SystemWeb  2
+Microsoft.Owin.Security 3
+Microsoft.Owin.Security.OAuth
+Microsoft.Web.Infraestructure 1
+Owin 1
